@@ -1,0 +1,358 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  margin-top: 1.5em;
+  background-color: #ffffff;
+  padding: 1rem 1rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space evenly around items */
+}
+
+.logo {
+  width: 75px; /* Adjust as needed */
+  height: 75px;
+}
+
+.logo-img{
+  transform: scale(1);
+  width: 70;
+  height: 70px;
+}
+
+.cart-icon {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.search{
+  margin-top: 6px;
+  display: none;
+}
+
+
+.cart-img{
+  margin-top: 5px;
+}
+
+.wishlist{
+  display: none;
+}
+
+.cart-counter {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+ 
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  display: none;
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.social-link-desktop{
+  display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 6rem;
+  right: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 800;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh; /* Fixed height */
+  padding: 1rem;
+  margin-top: 3rem;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.dropdown-desktop, .nav-menu-desktop, .menu-primary-desktop{
+  display: none;
+}
+
+
+/* Transitions */
+.menu-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.menu-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.menu-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Menu Items */
+.menu-item {
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+/* Transitions for Main Menu */
+.menu-primary-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.menu-primary-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-primary-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-primary-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Transitions for Nested Menus */
+.menu-secondary-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.menu-secondary-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-secondary-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-secondary-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* desktop */
+@media only screen and (min-width: 768px){
+
+  .dropdown-desktop, .nav-menu-desktop, .menu-primary-desktop{
+    display: block;
+  
+
+  }
+
+  .cakes-occassion-desktop h4, .cakes-flavor-desktop h4, .cakes-wedding-desktop h4, .all-cakes h4, .gifts-candles h4, .img-container h4{
+    text-transform: uppercase;
+    color: var(--sea-green-1);
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.04cap;
+  }
+
+  .cakes-occassion-desktop p, .cakes-flavor-desktop p, .cakes-wedding-desktop p{
+
+    color: var(--secondary-color-2);
+    font-weight: 400;
+    font-size: 0.9em;
+    letter-spacing: 0.04cap;
+  }
+
+  .navbar {
+
+    padding: 1rem 1.5rem;
+    margin-top: 0.7em;  
+  }
+
+    .nav-menu-desktop{
+      
+      position: absolute;
+      background-color: transparent;
+      width: 100%;
+      
+      height: 2em;
+      top: 4.3em;
+      left: 0;    
+    }
+  
+    .hamburger-btn{
+      display: none;
+    }
+
+    .cart-icon{
+      display: block;
+      display: flex;
+      gap: 1.56rem;
+    }
+
+    .cart-img{
+      margin-top: 0px;
+    }
+
+    .wishlist{
+      display: block;
+      margin-top: 3.5px;
+    }
+
+    .social-link-desktop{
+      display: flex;
+      gap: 1.56rem;
+      margin-top: 4px;
+    }
+
+    .logo {
+      width: 7.5rem; /* Adjust as needed */
+    }
+
+    .logo-img{
+      transform: scale(2);
+    }
+
+    .search{
+      margin-top: 1px;
+    }
+
+
+    .menu-primary-desktop{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bg-color2);
+
+      height: 2.3em;
+      position: relative;
+      z-index: 1000;
+      color: var(--sea-green-1);
+
+    }
+
+    .menu-item{
+      position: relative;
+      z-index: 100;
+      border-bottom: none;
+      padding: 0rem 1rem; 
+    }
+
+    .menu-primary-desktop-dropped, .menu-primary-desktop-dropped-cupcakes{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+   
+      background-color: #ffffff;
+
+      padding: 2rem 10rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+
+    .cakes-candles-gifts{
+      display: flex;
+      gap: 4rem;
+    }
+
+    /* Transitions for Nested Menus */
+    .menu-secondary-enter, 
+    .menu-secondary-exit {
+      opacity: 0;
+      transform: translateY(100%); /* Always starts off-screen */
+    }
+    
+    .menu-secondary-enter-active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-secondary-exit-active {
+      opacity: 0;
+      transform: translateX(-100%);
+      transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .menu-secondary-enter-active, 
+    .menu-secondary-exit-active {
+      will-change: opacity, transform; /* Optimized rendering */
+    }
+    
+
+
+.things-to-know-img{
+  object-fit: contain; /* Ensures the image covers the entire container */
+  object-position: center; /* Center the focal point */
+}
+
+
+
+
+
+
+}

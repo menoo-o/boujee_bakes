@@ -1,21 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Suranna&display=swap');
+
+:root{
+  --primary-color: #ff686b;
+  --secondary-color: #ffa69e;
+  --secondary-color-2: #F77870;
+  --text-color: #a5ffd6;
+  --heading: #84dcc6;
+  --bg-color: #ffffff;
+  --bg-color2: #FADFDB;
+
+  /* sea green colors */
+  --sea-green-1: #16706E;
+  --sea-green-2: #28444B;
+  --sea-green-3: #365B62;
+  --sea-green-4: #457479;
+  --sea-green-5: #63A7A6;
+  --sea-green-6: #B8DED9;
+
+  --noir: #543A14;
+  --baby-pink: #FFCFCF;
+  --orange: #C14600;
+  --gold:#FF9D23;
+
+
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+body{
+  font-family: "Suranna", serif;
+  font-weight: 400;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }

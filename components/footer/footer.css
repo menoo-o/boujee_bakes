@@ -1,0 +1,164 @@
+/* Footer Container */
+body{
+    margin-top: auto;
+}
+
+.footer-container {
+    background-color: var(--sea-green-2);
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+    color: var(--sea-green-6)
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 1rem;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  /* Social Links */
+  .social-links {
+    margin-bottom: 20px;
+  }
+  
+  .social-links h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61; /* Coral pink for emphasis */
+    margin-bottom: 1em;
+
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    gap: 1.5rem; /* Space between icons */
+  }
+  
+  /* Feedback Container */
+  .feedback-container {
+    margin-bottom: 20px;
+    
+  }
+  
+  .feedback-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6f61; /* Coral pink for emphasis */
+    margin-bottom: 10px;
+  }
+  
+  .feedback-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+  }
+  
+  .feedback-container .email {
+    font-weight: bold;
+    color: var(--sea-green-6);
+  }
+  
+  /* Collection Links */
+  .collection-links {
+    margin-bottom: 20px;
+  }
+  
+  .collection-links h3,
+  .more-info-links h3 {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #ff6f61; /* Coral pink for emphasis */
+    margin-bottom: 10px;
+  }
+  
+  .collection-links ul,
+  .more-info-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .collection-links li,
+  .more-info-links li {
+    margin-bottom: 8px;
+  }
+  
+  .collection-links a,
+  .more-info-links a {
+    text-decoration: none;
+    color: var(--sea-green-6);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .collection-links a:hover,
+  .more-info-links a:hover {
+   
+     color: #0E1E2B;;
+
+  }
+  
+  /* Copyright */
+  .copyright {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--sea-green-6);
+    grid-column: -3 / -1; /* Span across all columns */
+
+  }
+
+  .feedback-container{
+    display: none;
+  }
+
+  .social-links{
+    display: none;
+  }
+  /* Desktop/Tablet Layout */
+  @media (min-width: 768px) {
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      gap: 3.5rem;
+      text-align: left;
+      padding: 3rem;
+      
+    }
+    .social-links{
+      display: block;
+    }
+
+    .feedback-container{
+      display: block;
+    }
+  
+    .social-links,
+    .feedback-container,
+    .collection-links,
+    .more-info-links {
+      margin-bottom: 0;
+    }
+  
+    .copyright {
+      grid-column: 1 / -1; /* Span across all columns */
+      text-align: center;
+
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .footer-container {
+      grid-template-columns: repeat(4, 1fr); /* Four columns */
+    }
+  }
+
+  
+  
+ 
+  
+  

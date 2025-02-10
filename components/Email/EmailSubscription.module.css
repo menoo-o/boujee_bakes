@@ -1,0 +1,79 @@
+/* 🌟 Section Container */
+.container {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 12px;
+  }
+  
+  /* 📌 Heading */
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #121212;
+    margin-bottom: 1rem;
+  }
+  
+  /* 📝 Description */
+  .description {
+    font-size: 1.2rem;
+    color: #121212;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  /* 🖊️ Form Styling */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1.5rem;
+  }
+  
+  /* 🖱️ Input Field */
+  .input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #121212;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input:focus {
+    border-color: #ffcc00;
+  }
+  
+  /* ✨ Subscribe Button */
+  .button {
+    background-color: #121212;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #ffcc00;
+    color: #121212;
+  }
+  
+  /* 📱 Responsive: Adjust Layout for Mobile */
+  @media (max-width: 768px) {
+    .form {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,212 @@
+/* Base Styles */
+
+  
+ 
+/* Hero Container */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 9.5em;
+  flex-direction: column;
+  bottom: 3em;
+}
+
+ .hero-img{
+    width: 100%; /* Make image responsive */
+    height: 25.8rem;
+    background-color: rebeccapurple;
+ 
+  }
+  
+
+/* Hero Image */
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  z-index: 1; /* Place the image behind the text and buttons */
+  object-fit: cover; /* Maintain aspect ratio, fill container */
+  object-position: center; /* Center the focal point */
+}
+
+/* Hero Caption */
+.hero-caption {
+  position: relative;
+  z-index: 2; /* Place the text above the image */
+  text-align: center;
+  color: white;
+  max-width: 1200px; /* Adjust as needed */
+  padding: 1rem;
+  margin-bottom: 1rem;
+ 
+
+}
+
+.hero-caption h1 {
+  font-size: 2rem; /* Large font size */
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-caption span {
+  font-size: 3.1rem; /* Larger font size for the brand name */
+  font-weight: 800;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(255, 166, 158, 0.533) /* Subtle shadow */
+}
+
+/* Links Container */
+.links {
+  position: relative;
+  z-index: 2; /* Place the buttons above the image */
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 0.5rem;
+}
+
+/* Link Buttons */
+.link-baked-to-order,
+.link-order-now {
+  text-align: center;
+}
+
+
+.btn-glass {
+  display: inline-block;
+  padding: 0.65rem 0.7rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: "Cormorant", serif;
+  letter-spacing: 0.2cap;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #0a3615;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 1); /* Solid white on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.order-now {
+  background: rgba(255, 111, 97, 0.8); /* Semi-transparent coral */
+  color: white; /* White text for better contrast */
+  border: 1px solid rgba(255, 111, 97, 0.3); /* Coral border */
+}
+
+
+.link-baked-to-order p, .link-order-now p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #083328; /* Subtle text color for descriptions */
+}
+
+
+
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+    .hero-container{
+      bottom: 0em;
+      margin-top: 5.1em;
+      height: 35rem;
+
+    }
+
+    .hero-caption h1{
+      letter-spacing: 0.15cap;
+      font-size: 3.3rem;
+      line-height: 3cap;
+    }
+
+    .hero-caption span {
+    letter-spacing: 0.3cap;
+    font-weight: bolder;
+    font-size: 5rem; /* Larger font size for the brand name */
+    text-shadow: 4px 4px 8px rgba(255, 166, 158, 0.5), 
+                 -4px -4px 8px rgba(255, 166, 158, 0.2),
+                 0 0 20px rgba(255, 166, 158, 0.6); /* Multi-layered text shadow for depth */
+    background: linear-gradient(90deg, #9e160d, #c55d54, #9e160d); /* Repeating gradient for a dynamic effect */
+    background-size: 200% 100%; /* Extend the gradient for animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s linear infinite; /* Smooth gradient animation */
+    display: inline-block; /* Ensures the gradient and animation work properly */
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 100% 0; /* Start gradient from the right */
+    }
+    100% {
+        background-position: -100% 0; /* Move gradient to the left */
+    }
+}
+
+    .hero-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio, fill container */
+      object-position: center; /* Center the focal point */
+      z-index: -1; /* Ensure it stays behind content */
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem; /* Space between buttons */
+      margin-top: 2rem;
+  }
+  
+  .link-baked-to-order, .link-order-now {
+      text-align: center;
+  }
+  
+
+  .btn-glass:hover {
+      background: rgba(255, 255, 255, 1); /* Solid white on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+      transform: translateY(-2px); /* Slight lift effect */
+  }
+
+  .btn-glass {
+    font-size: 0.85rem;
+    padding: 0.7rem 0.85rem;
+  }
+
+  .order-now:hover{
+    background: rgba(253, 58, 40, 0.8);
+  }
+  
+
+    
+
+    
+
+
+}
+
+
+
+@media only screen and (min-width: 1400px){
+  .hero-container{
+    height: 44rem;
+    margin-top: 7em;
+  }
+}

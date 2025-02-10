@@ -1,0 +1,88 @@
+/* 🍫 Dark Background for Premium Feel */
+.flavorsContainer {
+    background-color: #ffffff;
+    padding: 1rem 1rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  
+  /* 🏅 Lindt Badge */
+  .lindtBadge {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--gold);
+    font-weight: 400;
+    margin-top: -1.5rem;
+
+  }
+  
+  /* 📜 Heading */
+  .heading {
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    color: var(--orange);
+  }
+  
+  /* 🔄 Swiper Settings */
+  .flavorsSwiper {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* ✨ Flavor Cards */
+  .slide {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  /* 🍪 Individual Flavor */
+  .flavorCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    background: #ffffff;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* 🖼️ Flavor Image */
+  .flavorImage {
+    width: 320px;
+    height: 340px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  /* 📝 Flavor Name */
+  .flavorName {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #CA7373;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.5px
+  }
+ 
+  
+  
+  
+  /* 📱 Responsive: Adjust for Tablet & Desktop */
+  @media (min-width: 768px) {
+    .flavorsContainer {
+      padding: 4rem 2rem;
+    }
+    .heading {
+      font-size: 2rem;
+    }
+  }
+ 
