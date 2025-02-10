@@ -34,7 +34,10 @@ export default function FlavorsSection() {
         modules={[Autoplay, EffectFade, Pagination]}
         effect="fade"
         pagination={{ clickable: true, }}
-       
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
         loop={true}
         className={styles.flavorsSwiper}
       >

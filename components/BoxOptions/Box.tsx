@@ -19,7 +19,7 @@ export default function BoxSection() {
   return (
     <section className={styles.flavorsContainer}>
       <h2 className={styles.heading}>
-      Choose Your Brownie Box  
+      Brownie Box  
       </h2>
 
       <Swiper

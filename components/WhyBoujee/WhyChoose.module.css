@@ -1,0 +1,60 @@
+/* 🌟 Section Container */
+.container {
+    background-color: var(--bg-color2);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* 📌 Heading */
+  .heading {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--noir); /* Golden accent */
+  }
+
+  .brand{
+    letter-spacing: 2px;
+     color: red;
+  }
+  
+  /* 🖼️ Image Wrapper */
+  .imageWrapper {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* 📝 Description */
+  .description {
+    font-size: 1.2rem;
+    max-width: 500px;
+    line-height: 1.6;
+    color: var(--orange);
+  }
+  
+  /* ✨ Highlight Lindt */
+  .lindt {
+    color: var(--gold);
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  /* 📱 Responsive: Larger Screens */
+  @media (min-width: 768px) {
+    .container {
+      max-width: 700px;
+      margin: auto;
+    }
+  }
+  

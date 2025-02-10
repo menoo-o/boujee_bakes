@@ -19,7 +19,7 @@
  .hero-img{
     width: 100%; /* Make image responsive */
     height: 25.8rem;
-    background-color: rebeccapurple;
+   
  
   }
   
@@ -49,7 +49,7 @@
 }
 
 .hero-caption h1 {
-  font-size: 2rem; /* Large font size */
+  font-size: 2.1rem; /* Large font size */
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -58,6 +58,7 @@
   font-size: 3.1rem; /* Larger font size for the brand name */
   font-weight: 800;
   color: white;
+  letter-spacing: 2px;
   text-shadow: 3px 3px 5px rgba(255, 166, 158, 0.533) /* Subtle shadow */
 }
 
@@ -86,11 +87,11 @@
   letter-spacing: 0.2cap;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.7rem;
-  color: #0a3615;
+  font-size: 0.8rem;
+  color: var(--orange);
   background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
-  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
 }
@@ -102,8 +103,8 @@
 }
 
 .order-now {
-  background: rgba(255, 111, 97, 0.8); /* Semi-transparent coral */
-  color: white; /* White text for better contrast */
+  background: rgba(255, 186, 97, 0.8); /* Semi-transparent coral */
+  color: rgb(116, 83, 12); /* White text for better contrast */
   border: 1px solid rgba(255, 111, 97, 0.3); /* Coral border */
 }
 

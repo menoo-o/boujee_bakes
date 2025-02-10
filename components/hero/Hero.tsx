@@ -20,17 +20,17 @@ import Link from 'next/link'
             </div>
             {/*text & btn higher z-index place on the image */}
             <div className='hero-caption'>
-                <h1>Get your boujee on with <br /><span>Boujee Bakes</span><br /></h1>
+                <h1>get your boujee on with <br /><span>Boujee Bakes</span><br /></h1>
             </div>
 
             <div className='links'>
                 <div className='link-baked-to-order'>
                     <Link href='/collections' className="btn btn-glass">Shop Brownies</Link>
-                    <p>Get it in 48hrs</p>
+                    
                 </div>
                 <div className='link-order-now'>
                     <Link href='/collections' className="btn btn-glass order-now">Last Minute Order</Link>
-                    <p>Get it in 24 Hrs+</p>
+                   
                 </div>
 
             </div>
